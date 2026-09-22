@@ -237,5 +237,9 @@ simulations/dual_perm_rxn/min3p_runs/*tar.gz
 # macOS Finder metadata
 .DS_Store
 
+# ignore testing
+/tests
+tests/
+
 # Ignore slurm output files
 simulations/**/slurm_output
