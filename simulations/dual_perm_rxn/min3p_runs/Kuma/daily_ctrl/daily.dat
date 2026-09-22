@@ -1,0 +1,805 @@
+! spinup.dat
+!
+! Data Block 1: global control parameters
+! ---------------------------------------------------------------------------
+!
+'global control parameters'
+'Control simulation with daily forcing'
+.true.                        ;varsat_flow
+.false.                       ;steady_flow
+.false.                       ;fully_saturated
+.true.                       ;reactive_transport
+
+! Turn on dual permeability
+'dual permeability'
+
+'done'
+
+! Data Block 2: geochemical system
+! ---------------------------------------------------------------------------
+!
+'geochemical system'
+
+'compute alkalinity'
+
+'use new database format'
+
+'database directory'
+'../../../../databases'
+
+'define temperature'
+20.0
+
+'components'
+13                            ;number of components (nc-1)
+'h+1'                           ;component names
+'co3-2'
+'mg+2'
+'ca+2'
+'na+1'
+'k+1'
+'al+3'
+'h4sio4'
+'cl-1'
+'psi01'
+'psi02'
+'gtr(aq)'
+'ftr'
+
+'secondary aqueous species'
+24
+'aloh+2'
+'al(oh)2+'
+'al(oh)3aq'
+'al(oh)4-'
+'alh3sio4+2'
+'cacl+'
+'caco3aq'
+'cahco3+'
+'caoh+'
+'hco3-'
+'h2co3aq'
+'h2sio4-2'
+'h3sio4-'
+'kcl(aq)'
+'koh(aq)'
+'mgco3aq'
+'mgcl+'
+'mghco3+'
+'mgoh+'
+'naco3-'
+'nacl(aq)'
+'nahco3aq'
+'naoh(aq)'
+'oh-'
+
+'gases'
+2                             ;number of gases
+'co2(g)'
+'gtr(g)'
+
+'minerals'
+8
+'co2_resp'
+'quartz'
+'k-feld-d-ph'
+'na-montmor'
+'calcite-ph'
+'sio2(a,pt)'
+'gibbsite-ph'
+'forst-ph'
+
+'sorbed species'
+6
+'mg-x(na)'
+'na-x(na)'
+'k-x(na)'
+'ca-x(na)'
+'h-x(na)'
+'al-x(na)'
+
+'done'
+
+! Data Block 3: spatial discretization
+! ---------------------------------------------------------------------------
+! 			
+'spatial discretization'
+1                             ;number of discretization intervals in x
+1                             ;number of control volumes in x
+0.0  1.0                      ;xmin,xmax
+2                             ;number of discretization intervals in y
+1                             ;number of control volumes in y
+0.0  0.05                     ;ymin,ymax
+1                             ;number of control volumes in y
+0.05  1.0                     ;ymin,ymax
+1	                          ;number of discretization intervals in z
+402                           ;number of control volumes in z
+0.0 4.01                      ;zmin,zmax
+
+'done'
+
+! Data Block 4: time step control - global system
+! ---------------------------------------------------------------------------
+!   			
+'time step control - global system'
+'days'			              ;time unit
+0.0                           ;time at start of solution
+3650.0                        ;final solution time
+1.0                           ;maximum time step
+0.0000001                     ;minimum time step
+
+'done'
+
+! Data Block 5: control parameters - local geochemistry
+! ---------------------------------------------------------------------------
+!
+'control parameters - local geochemistry'
+
+'newton iteration settings'
+1.0d-4                        ;factor for numerical differentiation
+1.0d-6                        ;convergence tolerance
+
+'maximum ionic strength'
+5.0d0                         ;max. ionic strength
+
+'minimum activity for h2o'
+0.5d0                         ;min. activity for h2o
+
+'output time unit'
+'days'                       ;time unit (local chemistry)
+
+'done'
+
+! Data Block 6: control parameters - variably saturated flow
+! ---------------------------------------------------------------------------
+!
+'control parameters - variably saturated flow'
+
+'mass balance'
+
+'input units for boundary and initial conditions'
+'pressure head'              ;input unit
+
+'compute underrelaxation factor'
+0.1                           ;maximum allowed update
+
+'newton iteration settings'
+1.0d-6                        ;increment for numerical differentiation
+100                           ;maxit_vs, max. number of newton iterations
+1.0d-6                        ;tol_vs, convergence tolerance
+0.1                           ;sw_star
+
+'solver settings'
+2                             ;level_vs, incomplete factorization level
+100                           ;msolvit_vs, max. number of solver iterations
+1                             ;idetail_vs, solver information level
+1.0d-7                        ;restol_vs, solver residual tolerance
+1.0d-7                        ;deltol_vs, solver update tolerance
+
+'done'
+
+! Data Block 7: control parameters - reactive transport
+! ---------------------------------------------------------------------------
+!
+'control parameters - reactive transport'
+
+'mass balance'
+
+'spatial weighting'
+'upstream'                       ;spatial weighting
+
+'cumulative mole fractions'   ;provide cumulative gas pressure in *gsg
+
+'activity update settings'
+'time_lagged'                 ;type of activity update
+
+'tortuosity correction'
+'millington'
+
+'newton iteration settings'
+1.0d-4                         ;increment h for numerical differentiation
+12                             ;anticipated number of Newton iterations
+100                            ;max. number of Newton iterations
+0.5                            ;anticipated update in log cycles
+1.0                            ;maximum update in log cycles
+1.0d-5                         ;convergence tolerance (global system)
+
+'solver settings'
+2                              ;incomplete factorization level
+100                            ;max. number of solver iterations
+1                             ;solver information level
+1.0d-7                        ;solver residual tolerance
+1.0d-7                        ;solver update tolerance
+
+'done'
+
+! Data Block 8: output control
+! ---------------------------------------------------------------------------
+!			
+'output control'                                                            			
+
+'output of spatial data'
+41
+ 90     180    270    360
+ 450    540    630    720
+ 810    900    990    1080
+ 1170   1260   1350   1440
+ 1530   1620   1710   1800
+ 1890   1980   2070   2160
+ 2250   2340   2430   2520
+ 2610   2700   2790   2880
+ 2970   3060   3150   3240
+ 3330   3420   3510   3600
+ 3650
+'define output locations as coordinates'
+
+'output of transient data'
+40                              ;number of output locations (transient data)
+2                               ;timesteps between output (transient data)
+0.0   0.025   4.005             ;xout, yout, zout (in meters)
+0.0   0.525   4.005
+0.0   0.025   3.995
+0.0   0.525   3.995
+0.0   0.025   3.955
+0.0   0.525   3.955
+0.0   0.025   3.905
+0.0   0.525   3.905
+0.0   0.025   3.805
+0.0   0.525   3.805
+0.0   0.025   3.705
+0.0   0.525   3.705
+0.0   0.025   3.605
+0.0   0.525   3.605
+0.0   0.025   3.505
+0.0   0.525   3.505
+0.0   0.025   3.495
+0.0   0.525   3.495
+0.0   0.025   3.305
+0.0   0.525   3.305
+0.0   0.025   3.205
+0.0   0.525   3.205
+0.0   0.025   3.005
+0.0   0.525   3.005
+0.0   0.025   2.805
+0.0   0.525   2.805
+0.0   0.025   2.705
+0.0   0.525   2.705
+0.0   0.025   2.605
+0.0   0.525   2.605
+0.0   0.025   2.505
+0.0   0.525   2.505
+0.0   0.025   2.005
+0.0   0.525   2.005
+0.0   0.025   1.995
+0.0   0.525   1.995
+0.0   0.025   1.005
+0.0   0.525   1.005
+0.0   0.025   0.995
+0.0   0.525   0.995
+
+'done'
+
+! Data Block 9: physical parameters - porous medium
+! ---------------------------------------------------------------------------
+!
+'physical parameters - porous medium'
+6                             ;number of property zones
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+1
+'macropore'
+0.9                           ;porosity
+
+'extent of zone'
+0.0 1.0  0.0 0.05  0.00 4.00
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+2
+'distribution layer 1'
+0.37                          ;porosity
+
+'extent of zone'
+0.0 1.0  0.0 0.05  4.00 4.01
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+3
+'distribution layer 2'
+0.37                          ;porosity
+
+'extent of zone'
+0.0 1.0  0.05 1.0  4.00 4.01
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+4
+'A horizon'
+0.4351                        ;porosity
+
+'extent of zone'
+0.0 1.0  0.05 1.0  3.79 4.00
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+5
+'B horizon'
+0.4490                        ;porosity
+
+'extent of zone'
+0.0 1.0  0.05 1.0  2.48 3.79
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+6
+'C horizon'
+0.4121                        ;porosity
+
+'extent of zone'
+0.0 1.0  0.05 1.0  0.00 2.48
+
+'end of zone'
+
+'done'
+
+! Data Block 10: physical parameters - variably saturated flow
+! ---------------------------------------------------------------------------
+!
+'physical parameters - variably saturated flow'
+
+'read root length density field from file'
+'transient transpiration'
+
+! ---------------------------------------------------------------------------
+'macropore'
+
+'hydraulic conductivity in y-direction'
+5.0d-1                        ;K_yy-Any number here does not make a difference, since Kyy is defined internally
+
+'hydraulic conductivity in z-direction'
+5.0d-1                        ;K_zz (m/s)
+
+'specific storage coefficient'
+0.0                           ;S_s
+
+'soil hydraulic function parameters'
+0.0556                        ;residual saturation
+5.64                          ;van genuchten - alpha
+2.49                          ;van genuchten - n
+0.5                           ;expn
+0.0                           ;air entry pressure
+
+'root water uptake'
+0.1760                        ;saturation at wilting point (satwlim)
+1.0                           ;saturation at field capacity (satwfield)
+0.5                           ;air-dry water saturation (satwdry) -- unused
+0.0                           ;root length density (root_length_dens) -- unused
+0.2968                        ;fitting parameter (rew0)
+1.4860                        ;fitting parameter (p1)
+1.5                           ;tree transpiration factor (1/d)
+1.0                           ;canopy evaporation factor (canopy_evap_factor)
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'distribution layer 1'
+
+'hydraulic conductivity in y-direction'
+5.0d-1                        ;K_yy-Any number here does not make a difference, since Kyy is defined internally
+
+'hydraulic conductivity in z-direction'
+5.0d-1                        ;K_zz (m/s)
+
+'specific storage coefficient'
+0.0                           ;S_s
+
+'soil hydraulic function parameters'
+0.01                          ;residual saturation (saturation [0,1], not water content [0, porosity])
+2.20                          ;van genuchten - alpha (1/m)
+1.48                          ;van genuchten - n
+0.5                           ;expn
+0.0                           ;air entry pressure
+
+'root water uptake'
+0.1760                        ;saturation at wilting point (satwlim)
+1.0                           ;saturation at field capacity (satwfield)
+0.5                           ;air-dry water saturation (satwdry) -- unused
+0.0                           ;root length density (root_length_dens) -- unused
+0.2968                        ;fitting parameter (rew0)
+1.4860                        ;fitting parameter (p1)
+1.5                           ;tree transpiration factor (1/d)
+1.0                           ;canopy evaporation factor (canopy_evap_factor)
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'distribution layer 2'
+
+'hydraulic conductivity in y-direction'
+5.0d-1                        ;K_yy-Any number here does not make a difference, since Kyy is defined internally
+
+'hydraulic conductivity in z-direction'
+5.0d-1                        ;K_zz (m/s)
+
+'specific storage coefficient'
+0.0                           ;S_s
+
+'soil hydraulic function parameters'
+0.01                          ;residual saturation (saturation [0,1], not water content [0, porosity])
+2.20                          ;van genuchten - alpha (1/m)
+1.48                          ;van genuchten - n
+0.5                           ;expn
+0.0                           ;air entry pressure
+
+'root water uptake'
+0.1760                        ;saturation at wilting point (satwlim)
+1.0                           ;saturation at field capacity (satwfield)
+0.5                           ;air-dry water saturation (satwdry) -- unused
+0.0                           ;root length density (root_length_dens) -- unused
+0.2968                        ;fitting parameter (rew0)
+1.4860                        ;fitting parameter (p1)
+1.5                           ;tree transpiration factor (1/d)
+1.0                           ;canopy evaporation factor (canopy_evap_factor)
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'A horizon'
+
+'hydraulic conductivity in y-direction'
+5.0d-1                        ;K_yy-Any number here does not make a difference, since Kyy is defined internally
+
+'hydraulic conductivity in z-direction'
+2.593d-6                      ;K_zz (m/s)
+
+'specific storage coefficient'
+0.0                           ;S_s
+
+'soil hydraulic function parameters'
+0.1689                        ;residual saturation (saturation [0,1], not water content [0, porosity])
+0.7426                        ;van genuchten - alpha (1/m)
+1.4649                        ;van genuchten - n
+0.5                           ;expn
+0.0                           ;air entry pressure
+
+'root water uptake'
+0.3442                        ;saturation at wilting point (satwlim)
+1.0000                        ;saturation at field capacity (satwfield)
+0.5                           ;air-dry water saturation (satwdry) -- unused
+0.0                           ;root length density (root_length_dens) -- unused
+0.6122                        ;fitting parameter (rew0)
+5.0000                        ;fitting parameter (p1)
+0.039656                      ;tree transpiration factor (1/d)
+1.0                           ;canopy evaporation factor (canopy_evap_factor)
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'B horizon'
+
+'hydraulic conductivity in y-direction'
+5.0d-1                        ;K_yy-Any number here does not make a difference, since Kyy is defined internally
+
+'hydraulic conductivity in z-direction'
+2.149d-6                      ;K_zz (m/s)
+
+'specific storage coefficient'
+0.0                           ;S_s
+
+'soil hydraulic function parameters'
+0.1875                        ;residual saturation (saturation [0,1], not water content [0, porosity])
+0.6901                        ;van genuchten - alpha (1/m)
+1.4344                        ;van genuchten - n
+0.5                           ;expn
+0.0                           ;air entry pressure
+
+'root water uptake'
+0.4114                        ;saturation at wilting point (satwlim)
+1.0000                        ;saturation at field capacity (satwfield)
+0.5                           ;air-dry water saturation (satwdry) -- unused
+0.0                           ;root length density (root_length_dens) -- unused
+0.6138                        ;fitting parameter (rew0)
+5.0000                        ;fitting parameter (p1)
+0.039656                      ;transpiration factor (1/d)
+1.0                           ;canopy evaporation factor (canopy_evap_factor)
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'C horizon'
+
+'hydraulic conductivity in y-direction'
+5.0d-1                        ;K_yy-Any number here does not make a difference, since Kyy is defined internally
+
+'hydraulic conductivity in z-direction'
+3.274d-6                      ;K_zz (m/s)
+
+'specific storage coefficient'
+0.0                           ;S_s
+
+'soil hydraulic function parameters'
+0.1642                        ;residual saturation (saturation [0,1], not water content [0, porosity])
+0.9975                        ;van genuchten - alpha (1/m)
+1.4427                        ;van genuchten - n
+0.5                           ;expn
+0.0                           ;air entry pressure
+
+'root water uptake'
+0.2555                        ;saturation at wilting point (satwlim)
+1.0000                        ;saturation at field capacity (satwfield)
+0.5                           ;air-dry water saturation (satwdry) -- unused
+0.0                           ;root length density (root_length_dens) -- unused
+0.5961                        ;fitting parameter (rew0)
+5.0000                        ;fitting parameter (p1)
+0.039656                      ;transpiration factor (1/d)
+1.0                           ;canopy evaporation factor (canopy_evap_factor)
+
+'end of zone'
+
+'done'
+
+! Data Block 11: physical parameters - reactive transport
+! ---------------------------------------------------------------------------
+!
+'physical parameters - reactive transport'
+'diffusion coefficients'
+2.4d-9                        ;aqueous phase diffusion coefficient
+1.8d-5                        ;gaseous phase diffusion coefficient
+
+! ---------------------------------------------------------------------------
+'macropore'
+'longitudinal dispersivity'
+0.01                          ;dispersivity
+'transverse vertical dispersivity'
+0.001                         ;dispersivity
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'distribution layer 1'
+'longitudinal dispersivity'
+0.01                          ;dispersivity
+'transverse vertical dispersivity'
+0.001                         ;dispersivity
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'distribution layer 2'
+'longitudinal dispersivity'
+0.01                          ;dispersivity
+'transverse vertical dispersivity'
+0.001                         ;dispersivity
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'A horizon'
+'longitudinal dispersivity'
+0.01                          ;dispersivity
+'transverse vertical dispersivity'
+0.001                         ;dispersivity
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'B horizon'
+'longitudinal dispersivity'
+0.01                          ;dispersivity
+'transverse vertical dispersivity'
+0.001                         ;dispersivity
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'C horizon'
+'longitudinal dispersivity'
+0.01                          ;dispersivity
+'transverse vertical dispersivity'
+0.001                         ;dispersivity
+'end of zone'
+
+'done'
+
+! Section 11B: physical parameters - dual permeability
+! --------------------------------------------------------------------------
+!
+'physical parameters - dual permeability'
+
+! Shape factor (B) represents the geometry of aggregates
+'geometry shape factor'
+3.0
+
+! Scaling factor (Yw) is an empirical factor
+'scaling factor'
+0.4
+
+! Effective diffusion path length (a) represents the distance
+! from the center of a fictitious matrix block to the fracture boundary
+'effective diffusion path length'
+0.01
+
+! Effective saturated hydraulic conductivity of the preferential flow
+! and matrix interface. Typically used as a calibration parameter
+'effective hydraulic conductivity'
+2.315d-6
+
+! The effective diffusion coefficient (Da) of the matrix block near interface
+'effective diffusion coefficient'
+5d-9
+
+'free phase gas diffusion coefficient'
+2.1d-5
+
+'tortuosity parameters'
+-0.66        ; a_mq
+2.33         ; b_mq
+
+! Ratio of the volumes of the fracture (wf) and the total pore system
+'fracture proportion'
+0.05
+
+'interface of matrix and fracture in y-direction'
+0.05
+
+'done'
+
+! Data Block 12: initial condition - variably saturated flow
+! ---------------------------------------------------------------------------
+!
+'initial condition - variably saturated flow'
+! Initial cond generated from spin-up
+'read initial condition from file'
+'done'
+
+! Data Block 13: boundary conditions - variably saturated flow
+! ---------------------------------------------------------------------------
+!
+'boundary conditions - variably saturated flow'
+2                             ;number of zones
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+1
+'inflow boundary - top'
+
+'boundary type'
+'second' -3.068d-10           ;flux (m/s)
+
+'extent of zone'
+0.0 1.0  0.0 1.0  4.01 4.01
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'                                                   			
+2			
+'outflow boundary - bottom'
+
+'boundary type'
+'first'   0.0                  ;pressure head [m]
+
+'extent of zone'
+0.0 1.0 0.0 1.0 0.0 0.0
+
+'end of zone'
+
+'transient boundary conditions'
+
+'done'
+
+! Data Block 15: initial condition - reactive transport
+! ---------------------------------------------------------------------------
+!
+'initial condition - reactive transport'
+1                             ;number of zones
+
+'read initial mineral areas from file'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+1
+'A horizon chem'
+
+'concentration input'
+6.69           'free'         ;'h+1'
+4.2200d-4      'free'         ;'co3-2'
+3.1581d-4      'free'         ;'mg+2'
+8.7394d-4      'free'         ;'ca+2'
+2.7894d-4      'free'         ;'na+1'
+1.7595d-3      'free'         ;'k+1'
+4.6629d-8      'free'         ;'al+3'
+8.4195d-5      'free'         ;'h4sio4'
+4.3398d-3      'charge'       ;'cl-1'
+1.0000d-3      'free'         ;'tracer - psi01'
+1.0000d-3      'free'         ;'tracer - psi02'
+1.0000d-6      'free'         ;'gtr(aq)'
+1.0000d-10     'free'         ;'ftr'
+
+'mineral input'
+0.001     .true.   'constant' ;phi_init, minequil, update_type -- 'co2_resp'
+0.00      1.0      0.00       ;phi_min, area (via surf file), unused
+0.25      .true.   'twothird' ;phi_init, minequil, update_type -- 'quartz'
+1.0d-10   1.0      0.00       ;phi_min, area (via surf file), unused
+0.04      .true.   'twothird' ;phi_init, minequil, update_type -- 'k-feld-d-ph'
+1.0d-10   1.0      0.00       ;phi_min, area (via surf file), unused
+0.07      .true.   'twothird' ;phi_init, minequil, update_type -- 'na-montmor'
+1.0d-10   1.0      0.00       ;phi_min, area (via surf file), unused
+1.0d-10   .true.   'twothird-mix' ;phi_init, minequil, update_type -- 'calcite-ph'
+1.0d-10   1.0      0.00    1.0d-7 ;phi_min, area (via surf file), supsatm, phinuc
+1.0d-10   .true.   'twothird-mix' ;phi_init, minequil, update_type -- 'sio2(a,pt)'
+1.0d-10   1.0      0.00    1.0d-7 ;phi_min, area (via surf file), supsatm, phinuc
+1.0d-10   .true.   'twothird-mix' ;phi_init, minequil, update_type -- 'gibbsite-ph'
+1.0d-10   1.0      0.00    1.0d-7 ;phi_min, area (via surf file), supsatm, phinuc
+1.0d-10   .true.   'twothird-mix' ;phi_init, minequil, update_type -- 'forst-ph'
+1.0d-10   1.0      0.00    1.0d-7 ;phi_min, area (via surf file), supsatm, phinuc
+
+'sorption parameter input'
+18.09                         ;cation exchange capacity [meq/100 g solid]
+1.26                          ;dry bulk density [g/cm^3]
+
+'equilibrate with fixed solution composition'
+
+'extent of zone'
+0.0 1.0  0.0 1.0  0.00 4.01   ;extent of zone
+
+'end of zone'
+'read cec from file'
+'read initial aqueous component concentrations from file'
+'read initial mineral volume fractions from file'
+'done'
+	
+! Data Block 16: boundary conditions - reactive transport
+! ---------------------------------------------------------------------------
+!
+'boundary conditions - reactive transport'
+2                             ;number of zones
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+1
+'influent'
+
+'boundary type'
+'mixed'
+
+'concentration input'
+5.60           'ph'           ;'h+1'
+4.2200d-4      'pco2'         ;'co3-2'
+8.6911d-5      'free'         ;'mg+2'
+2.8731d-4      'free'         ;'ca+2'
+3.1992d-4      'free'         ;'na+1'
+3.7114d-4      'free'         ;'k+1'
+5.9467d-10      'free'        ;'al+3'
+8.6306d-7      'free'         ;'h4sio4'
+6.7700d-6      'charge'       ;'cl-1'
+1.0000d-3      'free'         ;'tracer - psi01'
+1.0000d-3      'free'         ;'tracer - psi02'
+1.0000d-6      'free'         ;'gtr(aq)'
+1.0000d-10     'free'         ;'ftr'
+
+'extent of zone'
+0.0 1.0  0.0 1.0  4.01 4.01
+
+'end of zone'
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+2
+'bottom boundary'
+
+'boundary type'
+'second'
+
+'extent of zone'
+0.0 1.0  0.0 1.0  0.0 0.0
+
+'end of zone'
+
+'done'

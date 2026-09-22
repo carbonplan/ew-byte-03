@@ -1,0 +1,31 @@
+
+    ------------------------------------------------
+          M     M  I  N     N  333333  PPPPPP       
+          MM   MM  I  NN    N       3  P    P       
+          M M M M  I  N N   N       3  P    P       
+          M  M  M  I  N  N  N    3333  PPPPPP       
+          M     M  I  N   N N       3  P            
+          M     M  I  N    NN       3  P            
+          M     M  I  N     N  333333  P            
+
+                   Version 1.0.599.0
+
+                Build Date: 2025/07/03
+
+          A Numerical Model for the Analysis
+                       of the
+                Geochemical Evolution
+                         of
+                   Variable-Density
+              Mineral-Water-Gas-Systems
+
+                  (c) 2000 U. Mayer
+
+              Pitzer equations are included
+   -------------------------------------------
+
+database: ../../../../../databases
+
+     ***************** normal exit ******************
+
+

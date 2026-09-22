@@ -1,0 +1,137 @@
+! spinup.dat
+!
+! Data Block 1: global control parameters
+! ---------------------------------------------------------------------------
+!
+'global control parameters'
+'Speciation to determine initial and boundary conditions'
+.false.                       ;varsat_flow
+.false.                       ;steady_flow
+.false.                       ;fully_saturated
+.false.                       ;reactive_transport
+
+'done'
+
+! Data Block 2: geochemical system
+! ---------------------------------------------------------------------------
+!
+'geochemical system'
+
+'compute alkalinity'
+
+'use new database format'
+
+'database directory'
+'../../../../../databases'
+
+'define temperature'
+20.0
+
+'components'
+9                             ;number of components (nc-1)
+'h+1'                         ;component names
+'co3-2'
+'mg+2'
+'ca+2'
+'na+1'
+'k+1'
+'al+3'
+'h4sio4'
+'cl-1'
+
+'secondary aqueous species'
+24
+'aloh+2'
+'al(oh)2+'
+'al(oh)3aq'
+'al(oh)4-'
+'alh3sio4+2'
+'cacl+'
+'caco3aq'
+'cahco3+'
+'caoh+'
+'hco3-'
+'h2co3aq'
+'h2sio4-2'
+'h3sio4-'
+'kcl(aq)'
+'koh(aq)'
+'mgco3aq'
+'mgcl+'
+'mghco3+'
+'mgoh+'
+'naco3-'
+'nacl(aq)'
+'nahco3aq'
+'naoh(aq)'
+'oh-'
+
+'gases'
+1                             ;number of gases
+'co2(g)'
+
+'minerals'
+4
+'quartz'
+'k-feld-d-ph'
+'na-montmor'
+'calcite-ph'
+
+'done'
+
+! Data Block 5: control parameters - local geochemistry
+! ---------------------------------------------------------------------------
+!
+'control parameters - local geochemistry'
+
+'newton iteration settings'
+1.0d-4                        ;factor for numerical differentiation
+1.0d-6                        ;convergence tolerance
+
+'maximum ionic strength'
+5.0d0                         ;max. ionic strength
+
+'minimum activity for h2o'
+0.5d0                         ;min. activity for h2o
+
+'output time unit'
+'days'                        ;time unit (local chemistry)
+
+'done'
+
+! Data Block 15: initial condition - reactive transport
+! ---------------------------------------------------------------------------
+!
+'initial condition - local geochemistry'
+1                             ;number of zones
+
+
+! ---------------------------------------------------------------------------
+'number and name of zone'
+1
+'initial concentrations'
+
+'concentration input'
+8.54             'ph'         ;'h+1'
+4.3173d-4        'free'       ;'co3-2'
+1.4758d-4        'free'       ;'mg+2'
+7.4942d-4        'free'       ;'ca+2'
+1.7165d-3        'free'       ;'na+1'
+6.1458d-4        'free'       ;'k+1'
+8.0214d-8        'free'       ;'al+3'
+8.9519d-5        'free'       ;'h4sio4'
+6.7700d-4      'charge'       ;'cl-1'
+
+'mineral input'
+0.25      .false.  'twothird' ;phi_init, minequil, update_type -- 'quartz'
+1.0d-10   1.0d-5   0.00       ;phi_min, area (via surf file), unused
+0.04      .false.  'twothird' ;phi_init, minequil, update_type -- 'k-feld-d-ph'
+1.0d-10   1.0d-5   0.00       ;phi_min, area (via surf file), unused
+0.07      .false.  'twothird' ;phi_init, minequil, update_type -- 'na-montmor'
+1.0d-10   1.0d-5   0.00       ;phi_min, area (via surf file), unused
+0.008     .false.  'twothird' ;phi_init, minequil, update_type -- 'calcite-ph'
+1.0d-10   1.0d-5   0.00       ;phi_min, area (via surf file), unused
+
+'end of zone'
+
+'done'

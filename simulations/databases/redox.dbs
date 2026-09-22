@@ -1,0 +1,1395 @@
+
+! **********************************************************************
+! intra.dbs
+! **********************************************************************
+! MIN3P database file for equilibrium oxidation-reduction reactions
+! and intra-aqueous kinetic reactions
+!
+! ----------------------------------------------------------------------
+! redox reactions - computed from MINTEQ/WATEQ databases
+! ----------------------------------------------------------------------
+!
+! fe+3
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+! activation energy undefined
+!
+'fe+3'
+4  'fe+2'           1.000 'o2(aq)'       0.250 'h+1'          1.000 'h2o'    -0.500
+'equilibrium'  -8.4725   23.4570
+!
+! no2-1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'no2-1'
+2  'no3-1'    1.000  'o2(aq)'    -.500
+'equilibrium' 14.4390  -23.1540
+!
+! nh4+1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'nh4+1'
+4  'no3-1'    1.000  'h2o'    1.000  'h+1'    2.000  'o2(aq)'   -2.000
+'equilibrium'   52.9590  -80.6011
+!
+! h3aso4
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'h3aso4'
+2  'h3aso3'    1.000  'o2(aq)'     .500
+'equilibrium'  -23.5650  36.8990
+!
+! sb(oh)3
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'sb(oh)3'
+4  'sb(oh)6-'    1.000  'o2(aq)'    -.500  'h+1'    1.000  'h2o'   -2.000
+'equilibrium'   17.2299  .0000
+!
+! u+3
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'u+3'
+4  'uo2+2'    1.000  'o2(aq)'    -.750  'h+1'    1.000   'h2o'    -.500
+'equilibrium'   64.0935  -90.3410
+!
+! u+4
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'u+4'
+4  'uo2+2'   1.000  'o2(aq)'    -.500  'h+1'    2.000   'h2o'   -1.000
+'equilibrium'   33.7930  -32.4840
+!
+! uo2+1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'uo2+1'
+4  'uo2+2'   1.000  'o2(aq)'    -.250   'h+1'   -1.000  'h2o'     .500
+'equilibrium'   18.7195  -30.1570
+!
+! mn+3
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'mn+3'
+4  'mn+2'    1.000  'o2(aq)'     .250   'h+1'    1.000  'h2o'    -.500
+'equilibrium'    4.0025   59.2170
+!
+! cu+1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'cu+1'
+4  'cu+2'   1.000  'o2(aq)'    -.250  'cu+2'   1.000  'h+1'   -1.000  'h2o'     .500
+'equilibrium'   18.7845  -35.1070
+!
+! v+2
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'v+2'
+4  'vo2+1'   1.000  'o2(aq)'    -.750  'h+1'    1.000   'h2o'    -.500
+'equilibrium'   46.1335  -65.0410
+!
+! v+3
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'v+3'
+4  'vo2+1'   1.000  'o2(aq)'    -.500  'h+1'    2.000   'h2o'   -1.000
+'equilibrium'   20.3990  -22.6840
+!
+! vo+2
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'vo+2'
+4  'vo2+1'    1.000  'o2(aq)'    -.250  'h+1'    1.000    'h2o'    -.500
+'equilibrium'    4.5745   -4.1370
+!
+! hs-1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'hs-1'
+3  'so4-2'   1.000  'h+1'    1.000  'o2(aq)'   -2.000
+'equilibrium'  138.3760 -207.5161
+!
+! tl+1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'tl+1'
+4  'tl(oh)3'   1.000  'o2(aq)'    -.500  'h+1'    1.000  'tl+1'   -1.000  'h2o'   -2.000
+'equilibrium'   -5.0088     .0000
+!
+! hse-1
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'hse-1'
+2  'hseo3-1'    1.000  'o2(aq)'   -1.500
+'equilibrium'   93.6470 -122.5721
+!
+! seo4-2
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'seo4-2'
+3  'hseo3-1'    1.000  'o2(aq)'     .500  'h+1'   -1.000
+'equilibrium'   -6.6900   18.8190
+!
+! hg2+2
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'hg2+2'
+4  'hg(oh)2'    1.000  'h+1'    2.000  'o2(aq)'    -.500  'h2o'   -3.000
+'equilibrium'     .0220   -3.3240
+!
+! cr+2
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'cr+2'
+4  'cr(oh)2+'    1.000  'h2o'   -1.500   'h+1'    1.000  'o2(aq)'    -.250
+'equilibrium'   18.5575  -39.8170
+!
+! cro4-2
+! equilibrium constant calculated from MINTEQ-database
+! enthalpy change calculated from MINTEQ-database
+!
+'cro4-2'
+4  'cr(oh)2+'    1.000  'h+1'   -3.000  'o2(aq)'     .750   'h2o'     .500
+'equilibrium'    2.8625   -2.6290
+!
+! -------------------------------------------------------------------------
+! intra-aqueous kinetic reactions - user defined
+! -------------------------------------------------------------------------
+!
+! ch2o-degradation - aerobic respiration - Monod-kinetics
+!
+'ch2o-o2'
+4  'ch2o' -1.000  'o2(aq)' -1.000  'co3-2' 1.000  'h+1' 2.000
+'irreversible'
+
+'hyperbolic T^a' 4
+'o2(aq)' 3.125d-6   1.0d0
+'ch2o'   1.0d-4     1.0d0
+'o2(aq)' 1.d-10     2.0d0
+'ch2o'   1.d-10     2.0d0
+
+!
+! benzene degradation - aerobic respiration - Monod-kinetics
+!
+'c6h6-o2'
+4  'c6h6' -1.000  'o2(aq)' -7.500  'co3-2' 6.000  'h+1' 12.000
+'irreversible'
+
+'hyperbolic T^a' 4
+'o2(aq)' 3.125d-6   1.0d0
+'c6h6'   1.0d-4     1.0d0
+'o2(aq)' 1.d-10     2.0d0
+'c6h6'   1.d-10     2.0d0
+
+!
+! ch2o degradation - denitrification - Monod-kinetics
+!
+'ch2o-no3'
+6  'ch2o' -1.000 'no3-1' -0.800   'co3-2' 1.000  'n2(aq)' 0.400  'h+1' 1.200  'h2o' 0.400
+'irreversible'
+
+'hyperbolic T^a'  4
+'no3-1'  8.064d-6 1.0d0
+'ch2o'   1.064d-4 1.0d0
+'no3-1'  1.d-10   2.0d0
+'ch2o'   1.d-10   2.0d0
+
+'inhibition T^a'  1
+'o2(aq)' 6.250d-6  1.0d0
+
+!
+! benzene degradation - denitrification - Monod-kinetics
+!
+'c6h6-no3'
+5  'c6h6' -1.000 'no3-1' -6.000   'co3-2' 6.000  'n2(aq)' 3.000  'h+1' 6.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'no3-1'  8.064d-6 1.0d0
+'c6h6'   1.064d-4 1.0d0
+'no3-1'  1.d-10   2.0d0
+'c6h6'   1.d-10   2.0d0
+
+'inhibition - aqueous'  1
+'o2(aq)' 6.250d-6  1.0d0
+!
+! ch2o degradation - sulfate reduction - Monod-kinetics
+!
+'ch2o-so4'
+5  'ch2o' -1.000 'so4-2' -0.500  'co3-2' 1.000  'hs-1' 0.500  'h+1' 1.500
+'irreversible'
+
+'hyperbolic T^a'  4
+'so4-2' 1.6d-3   1.0d0
+'ch2o'  1.064d-4 1.0d0
+'so4-2' 1.0d-10  2.0d0
+'ch2o'  1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'o2(aq)' 3.125d-5  1.0d0
+'no3-1'  1.600d-5  1.0d0
+
+!
+! benzene degradation - sulfate reduction - Monod-kinetics
+! inhibition by nitrate and oxygen
+!
+'c6h6-so4'
+6  'c6h6' -1.000 'so4-2' -3.750  'h2o' -3.000  'co3-2' 6.000  'hs-1' 3.750  'h+1' 8.250
+'irreversible'
+
+'hyperbolic T^a'  4
+'so4-2' 1.6d-3   1.0d0
+'c6h6'  1.064d-4 1.0d0
+'so4-2' 1.0d-10  2.0d0
+'c6h6'  1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'o2(aq)' 3.125d-5  1.0d0
+'no3-1'  1.600d-5  1.0d0
+
+!
+! benzene degradation - sulfate reduction - Monod-kinetics
+! inhibition by nitrate
+!
+'c6h6-so4-2'
+6  'c6h6' -1.000 'so4-2' -3.750  'h2o' -3.000  'co3-2' 6.000  'hs-1' 3.750  'h+1' 8.250
+'irreversible'
+
+'hyperbolic T^a'  4
+'so4-2' 1.6d-3   1.0d0
+'c6h6'  1.064d-4 1.0d0
+'so4-2' 1.0d-10  2.0d0
+'c6h6'  1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)' 3.125d-5  1.0d0
+
+!
+! ch2o degradation - fermentation - Monod-kinetics
+!
+'ch2o-ch4'
+5  'ch2o' -1.000  'h2o' -0.500  'co3-2' 0.500  'ch4(aq)' 0.500  'h+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  2
+'ch2o' 1.0d-3   1.0d0
+'ch2o' 1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'o2(aq)' 3.125d-5  1.0d0
+'no3-1'  1.600d-5  1.0d0
+
+!
+! ch2o degradation - fermentation - Monod-kinetics
+! no inhibition by nitrate
+!
+'ch2o-ch4-2'
+5  'ch2o' -1.000  'h2o' -0.500  'co3-2' 0.500  'ch4(aq)' 0.500  'h+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  2
+'ch2o' 1.0d-3   1.0d0
+'ch2o' 1.0d-10  2.0d0
+
+'inhibition T^a' 1
+'o2(aq)' 3.125d-5  1.0d0
+
+!
+! benzene degradation - fermentation - Monod-kinetics
+!
+'c6h6-ch4-2'
+5  'c6h6' -1.000  'h2o' -6.750  'co3-2' 2.250  'ch4(aq)' 3.750  'h+1' 4.500
+'irreversible'
+
+'hyperbolic T^a'  2
+'c6h6' 1.0d-3   1.0d0
+'c6h6' 1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'o2(aq)' 3.125d-5  1.0d0
+'no3-1'  1.600d-5  1.0d0
+
+!
+! benzene degradation - fermentation - Monod-kinetics
+!
+'c6h6-ch4-3'
+5  'c6h6' -1.000  'h2o' -6.750  'co3-2' 2.250  'ch4(aq)' 3.750  'h+1' 4.500
+'irreversible'
+
+'hyperbolic T^a'  2
+'c6h6' 1.0d-3   1.0d0
+'c6h6' 1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)' 3.125d-5  1.0d0
+
+!
+! benzene degradation - fermentation - Monod-kinetics
+!
+'c6h6-ch4'
+5  'c6h6' -1.000  'h2o' -6.750  'co3-2' 2.250  'ch4(aq)' 3.750  'h+1' 4.500
+'irreversible'
+
+'hyperbolic T^a'  2
+'c6h6' 1.0d-3   1.0d0
+'c6h6' 1.0d-10  2.0d0
+
+'inibition T^a'  3
+'o2(aq)' 3.125d-5  1.0d0
+'no3-1'  1.600d-5  1.0d0
+'so4-2'  1.600d-5  1.0d0
+
+'inhibition phi^m'  1
+'feooh-c6h6'  1.000d-8  1.0d0
+
+!
+! ch4-oxidation - aerobic respiration - Monod-kinetics
+!
+'ch4-o2'
+5  'ch4(aq)' -1.000  'o2(aq)' -2.000  'co3-2' 1.000  'h+1' 2.000  'h2o' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-6 1.0d0
+'ch4(aq)'  1.0d-5   1.0d0
+'o2(aq)'   1.0d-10  2.0d0
+'ch4(aq)'  1.0d-10  2.0d0
+
+!
+! h2s-oxidation - aerobic respiration - Monod-kinetics
+!
+'ch4-hs'
+4  'hs-1' -1.000  'o2(aq)' -2.000  'so4-2' 1.000  'h+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-6  1.0d0
+'hs-1'       1.0d-5  1.0d0
+'o2(aq)'    1.0d-10  2.0d0
+'hs-1'      1.0d-10  2.0d0
+
+!
+! ch4-oxidation - denitrification - Monod-kinetics
+!
+'ch4-no3'
+6  'ch4(aq)' -1.000 'no3-1' -1.600 'co3-2' 1.000  'n2(aq)' 0.800  'h+1' 0.400  'h2o' 1.800
+'irreversible'
+
+'hyperbolic T^a'  4
+'no3-1'   8.064d-6 1.0d0
+'ch4(aq)' 1.0d-5   1.0d0
+'no3-1'   1.0d-10  2.0d0
+'ch4(aq)' 1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)' 6.250d-6  1.0d0
+
+!
+! ch4-oxidation - sulfate reduction - Monod-kinetics
+! inhibition by of and nitrate
+!
+'ch4-so4'
+6  'ch4(aq)' -1.000 'so4-2' -1.000  'h2o' 1.000  'co3-2' 1.000  'hs-1' 1.000  'h+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'so4-2'   1.6d-3   1.0d0
+'ch4(aq)' 1.0d-5   1.0d0
+'so4-2'   1.0d-10  2.0d0
+'ch4(aq)' 1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'o2(aq)' 3.125d-5  1.0d0
+'no3-1'  1.600d-5  1.0d0
+
+!
+! ch4-oxidation - sulfate reduction - Monod-kinetics
+! inhibition by O2
+!
+'ch4-so4-2'
+6  'ch4(aq)' -1.000 'so4-2' -1.000  'h2o' 1.000  'co3-2' 1.000  'hs-1' 1.000  'h+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'so4-2'   1.6d-3   1.0d0
+'ch4(aq)' 1.0d-5   1.0d0
+'so4-2'   1.0d-10  2.0d0
+'ch4(aq)' 1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)' 3.125d-5  1.0d0
+
+!
+! Fe(II)-oxidation - aerobic respiration - Monod kinetics
+!
+'fe+2-o2'
+4  'fe+3' 1.000   'fe+2' -1.000   'o2(aq)' -0.250   'h+1'  -1.000   'h2o'  0.500
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-6 1.0d0
+'fe+2'     1.0d-5   1.0d0
+'o2(aq)'   1.0d-10  2.0d0
+'fe+2'     1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'c6h6'     1.0d-7   1.0d0
+'ch4(aq)'  1.0d-7   1.0d0
+
+!
+! Fe(II)-oxidation - aerobic respiration - Monod kinetics
+!
+'fe+2-o2-2'
+4  'fe+3' 1.000   'fe+2' -1.000   'o2(aq)' -0.250   'h+1'  -1.000   'h2o'  0.500
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-6 1.0d0
+'fe+2'     1.0d-5   1.0d0
+'o2(aq)'   1.0d-10  2.0d0
+'fe+2'     1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'ch2o'     1.0d-7   1.0d0
+'ch4(aq)'  1.0d-7   1.0d0
+
+!
+! Fe(III)-reduction by benzene - Monod kinetics
+!
+'fe+3-c6h6'
+6  'fe+3' -30.000   'c6h6' -1.000  'h2o'  -18.00  'fe+2' 30.000   'co3-2' 6.000   'h+1'  42.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'c6h6'     1.0d-4   1.0d0
+'fe+3'     1.0d-6   1.0d0
+'c6h6'     1.0d-10  2.0d0
+'fe+3'     1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)'   3.125d-6  1.0d0
+
+!
+! Fe(III)-reduction by ch2o - Monod kinetics
+!
+'fe+3-ch2o'
+6  'fe+3' -4.000   'ch2o' -1.000  'h2o'  -2.000  'fe+2' 4.000   'co3-2' 1.000  'h+1' 6.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'ch2o'     1.0d-4   1.0d0
+'fe+3'     1.0d-6   1.0d0
+'ch2o'     1.0d-10  2.0d0
+'fe+3'     1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)'   3.125d-6 1.0d0
+
+!
+! Fe(III)-reduction by methane - Monod kinetics
+!
+'fe+3-ch4'
+6  'fe+3' -1.000   'ch4(aq)' -0.125  'h2o' -0.375  'fe+2' 1.000  'co3-2' 0.125  'h+1'  1.250
+'irreversible'
+
+'hyperbolic T^a'  4
+'ch4(aq)'  1.0d-5   1.0d0
+'fe+3'     1.0d-6   1.0d0
+'ch4(aq)'  1.0d-10  2.0d0
+'fe+3'     1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)'   3.125d-6 1.0d0
+
+!
+! pce-mno4
+! oxidation of pce by mno4-1
+! first order wrt to mno4-1
+! first order wrt to pce
+!
+'pce-mno4'
+7  'c2cl4' -0.750 'mno4-1' -1.000  'h2o' -2.500  'co3-2' 1.500  'cl-1' 3.000  'h+1' 5.000  'mno2(aq)' 1.000
+'irreversible'
+
+'fractional T^a'  2
+'c2cl4'   1.0d0
+'mno4-1'  1.0d0
+
+'hyperbolic T^a' 2
+'c2cl4'   5.0d-6   1.0d0
+'c2cl4'   1.0d-6   1.0d0
+
+!
+! pce-mno4-2
+! oxidation of pce by mno4-1
+! first order wrt to mno4-1
+! first order wrt to pce
+! no inhibition at low pce concentrations
+!
+'pce-mno4-2'
+7  'c2cl4' -0.750 'mno4-1' -1.000  'h2o' -2.500  'co3-2' 1.500  'cl-1' 3.000  'h+1' 5.000  'mno2(aq)' 1.000
+'irreversible'
+
+'fractional T^a'  2
+'c2cl4'   1.000
+'mno4-1'  1.000
+
+'hyperbolic T^a'  2
+'c2cl4'   1.0d-20   2.0d0
+'mno4-1'  1.0d-20   2.0d0
+
+!
+! h2o-mno4
+! oxidation of h2o by mno4-1
+! first order wrt mno4-1
+!
+'h2o-mno4'
+5 'mno4-1' -1.000  'h+1' -1.000  'o2(aq)' 0.750  'h2o' 0.500  'mno2(aq)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'mno4-1' 1.000
+
+
+! --------------------------------------------------------------------------------
+! N transformations and O2 transport, Hussain et al. 2019 
+
+! ch2o-degradation - aerobic respiration - Monod-kinetics
+! for comparison with COMPTRAN
+!
+'ch2o-o2-ct'
+4  'ch2o(aq)' -1.000  'o2(aq)' -1.000  'co3-2' 1.000  'h+1' 2.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'  2.41d-5  1.0d0
+'ch2o(aq)'  2.0d-4  1.0d0
+'o2(aq)'  1.d-10  2.0d0
+'ch2o(aq)'  1.d-10  2.0d0
+'log rate constant' -8.17 !log10 rate constant
+'activation energy' 16.73
+!
+! ch2o-degradation - denitrification - Monod-kinetics
+! for comparison with COMPTRAN
+!
+'ch2o-no3-ct'
+6  'ch2o(aq)' -2.500 'no3-1' -2.000   'co3-2' 2.500  'n2(aq)' 1.000  'h+1' 3.000  'h2o' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'no3-1'  8.064d-6  1.0d0
+'ch2o(aq)'  2.0d-4  1.0d0
+'no3-1'  1.d-10  2.0d0
+'ch2o(aq)'  1.d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)' 5.0d-8   1.0d0
+'log rate constant' -8.17 !log10 rate constant
+'activation energy' 48.28
+
+!
+! nh4-oxidation 1 - nitrification - Monod-kinetics
+! for AAFC 
+!
+'nh4-no2-aafc'
+5  'nh4+1' -1.000 'o2(aq)' -1.500   'no2-1' 1.000  'h+1' 2.000  'h2o' 1.000
+'irreversible'
+'hyperbolic T^a'  4
+'nh4+1'  5.54d-6  1.0d0
+'o2(aq)'  2.41d-5  1.0d0
+'nh4+1'  1.d-20  2.0d0
+'o2(aq)'  1.d-20  2.0d0
+'log rate constant' -8.87 !log10 rate constant
+'activation energy' 20.79
+
+!
+! no2-oxidation - nitrification - Monod-kinetics
+! for AAFC
+!
+'no2-no3-aafc'
+3  'no2-1' -1.000 'o2(aq)' -0.500   'no3-1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'no2-1'  6.52d-6  1.0d0
+'o2(aq)'  2.41d-5  1.0d0
+'no2-1'  1.d-20  2.0d0
+'o2(aq)'  1.d-20  2.0d0
+'log rate constant' -8.41 !log10 rate constant
+'activation energy' 27.96
+
+!
+! -------------------------------------------------------------------------------
+! -------------------------------------------------------------------------------
+! C-N cycle and GHG emissions, developed by Mengqi Jia, Aug, 2019
+! C-N cycle and GHG emissions, updated by Mengqi Jia, Sep, 2019
+! C-N cycle and GHG emissions, added biomass dynamics for C-cycle, updated by M.Jia, Nov, 2019
+! C-N cycle and GHG emissions, added biomass dynamics for CH4 production, updated by M.Jia, Jan, 2020
+! C-N cycle and GHG emissions, drop off biomass inhibition terms for all microbially mediated reaction, 
+!                              updated by M.Jia, Jan, 2020
+! C-N cycle and GHG emissions, revised Biomass unit from mol/L h2o to mol/L bulk,
+!                              updated by M.Jia, Jan, 2020
+! C-N cycle and GHG emissions, added biomass inhibition terms, updated by M.Jia, Jan, 2020
+! C-N cycle and GHG emissions, reduced no3 inhibition terms for denitrification,
+!                              updated by M.Jia, Jan, 2020
+! GHG cycling at WEBs, reduced CH4 generation reaction, updated by M.Jia, Mar, 2020
+! C-N cycle and GHG emissions, refined and updated all reaction for stoichiometric coefficients
+!                              updated by M.Jia, April, 2020
+
+!
+! Nitrification (fs =0.1)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+'nh4-no3-nit'
+7  'nh4+1' -0.130  'o2(aq)' -0.225  'co3-2' -0.025  'bio_nit' 0.005  'no3-1' 0.125  'h+1' 0.205  'h2o' 0.140
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit'   1.0d0
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-6  1.0d0
+'o2(aq)'  2.41d-5  1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+'inhibition T^a'  1
+'bio_nit'  4.01d-5   1.0d0
+
+! Nitrification-I (fs =0.1)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+'nh4-no3-nit1'
+7  'nh4+1' -0.170  'o2(aq)' -0.225  'co3-2' -0.025  'bio_nit' 0.005  'no2-1' 0.170  'h+1' 0.285  'h2o' 0.170
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit'   1.0d0
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-6  1.0d0
+'o2(aq)'  2.41d-5  1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+'inhibition T^a'  1
+'bio_nit'  4.01d-5   1.0d0
+
+! Nitrification-II (fs =0.1)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+
+'nh4-no3-nit2'
+7  'nh4+1' -0.130  'o2(aq)' -0.225  'co3-2' -0.025  'bio_nit2' 0.005  'no3-1' 0.125  'h+1' 0.205  'h2o' 0.140
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit2'   1.0d0
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-6  1.0d0
+'o2(aq)'  2.41d-5  1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+'inhibition T^a'  1
+'bio_nit2'  4.01d-5   1.0d0
+
+!
+! Denitrification(I)
+! no3-reduction - denitrification - Monod-kinetics (step 1)
+!
+'no3-no2-nar'
+7  'ch3coo-' -0.125  'no3-1' -0.300  'nh4+1' -0.020  'co3-2' 0.150  'no2-1'  0.300  'h+1' 0.195  'bio_nar' 0.020
+'irreversible'
+
+'fractional T^a'  1
+'bio_nar'   1.0d0
+
+'hyperbolic T^a'  6
+'ch3coo-' 2.00d-4   1.0d0
+'no3-1'   1.06d-5   1.0d0
+'nh4+1'   1.00d-6   1.0d0
+'ch3coo-' 1.00d-10  2.0d0
+'no3-1'   1.00d-10  2.0d0
+'nh4+1'   1.00d-10  2.0d0
+
+'inhibition T^a'  2
+'bio_nar'  2.00d-5   1.0d0
+'o2(aq)'   5.06d-8   1.0d0
+
+! Denitrification(II)
+! no2-reduction - denitrification - Monod-kinetics (step 2)
+!
+'no2-n2o-nir'
+8  'ch3coo-' -0.250  'no2-1' -0.600  'nh4+1' -0.040  'h+1' -0.210  'co3-2' 0.300  'n2o(aq)' 0.300  'h2o' 0.420  'bio_nir' 0.040
+'irreversible'
+
+'fractional T^a'  1
+'bio_nir'   1.0d0
+
+'hyperbolic T^a'  6
+'ch3coo-' 2.00d-4   1.0d0
+'no2-1'   1.06d-5   1.0d0
+'nh4+1'   1.00d-6   1.0d0
+'ch3coo-' 1.00d-10   2.0d0
+'no2-1'   1.00d-10   2.0d0
+'nh4+1'   1.00d-10   2.0d0
+
+'inhibition T^a'  2
+'bio_nir'  2.00d-5   1.0d0
+'o2(aq)'   5.06d-8   1.0d0
+
+! Denitrification(III)
+! n2o-reduction - denitrification - Monod-kinetics (step 3)
+!
+'n2o-n2-nir'
+8  'ch3coo-' -0.125  'n2o(aq)' -0.300  'nh4+1' -0.020  'h+1' 0.195  'co3-2' 0.150  'n2(aq)' 0.300  'h2o' 0.060  'bio_nir' 0.020
+'irreversible'
+
+'fractional T^a'  1
+'bio_nir'   1.0d0
+
+'hyperbolic T^a'  6
+'ch3coo-'  2.00d-4   1.0d0
+'n2o(aq)'  1.06d-5   1.0d0
+'nh4+1'    1.00d-6   1.0d0
+'ch3coo-'  1.00d-10   2.0d0
+'n2o(aq)'  1.00d-10   2.0d0
+'nh4+1'    1.00d-10   2.0d0
+
+'inhibition T^a'  2
+'bio_nir'   2.00d-5   1.0d0
+'o2(aq)'    5.06d-8   1.0d0
+
+!
+! Aerobic Respiration
+! ch3coo-degradation - aerobic respiration - Monod-kinetics
+!
+'ch3coo-o2-aer'
+7  'ch3coo-' -0.125  'o2(aq)' -0.100  'nh4+1' -0.030  'co3-2' 0.100  'h+1' 0.105  'h2o' 0.090  'bio_aer' 0.030
+'irreversible'
+
+'fractional T^a'  1
+'bio_aer'   1.0d0
+
+'hyperbolic T^a'  4
+'o2(aq)'   2.41d-5  1.0d0
+'ch3coo-'  2.00d-4  1.0d0
+'o2(aq)'   1.d-10   2.0d0
+'ch3coo-'  1.d-10   2.0d0
+
+'inhibition T^a'  1
+'bio_aer'   2.00d-5   1.0d0
+
+!
+! anaerobic respiration - CH4 production - Monod-kinetics - biomass dynamics
+!
+'ch3coo-ch4-anaer'
+7  'ch3coo-' -0.500  'h2o' -0.450  'no2-1' -0.154  'bio_anaer' 0.154  'co3-2' 0.4728  'ch4(aq)' 0.450  'h+1' 0.4038
+'irreversible'
+
+'fractional T^a'  1
+'bio_anaer'   1.0d0
+
+'hyperbolic T^a'  4
+'ch3coo-'   2.0d-4   1.0d0
+'no2-1'     1.06d-5  1.0d0
+'ch3coo-'   1.0d-10  2.0d0
+'no2-1'     1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'bio_anaer'  2.00d-5  1.0d0
+'o2(aq)'     5.06d-8  1.0d0
+
+!
+! anaerobic respiration - CH4 production - Monod-kinetics - biomass dynamics
+!
+'co2-ch4-anaer'
+5  'co3-2' -0.250  'h+1' -0.500  'h2(aq)' -2.000  'h2o' 1.500  'ch4(aq)' 0.500
+'irreversible'
+
+'hyperbolic T^a'  2
+'co3-2'   2.0d-4   1.0d0
+'h2(aq)'  1.06d-5  1.0d0
+'co3-2'   1.0d-10  2.0d0
+'h2(aq)'  1.0d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)'     5.06d-8  1.0d0
+
+!
+! aerobic respiration - ch4-oxidation - Monod-kinetics - no biomass dynamics
+!
+'ch4-o2-aer'
+5  'ch4(aq)' -0.250  'o2(aq)' -0.500  'co3-2' 0.250  'h+1' 1.000  'h2o' 0.250
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   2.41d-5  1.0d0
+'ch4(aq)'  1.00d-5  1.0d0
+'o2(aq)'   1.0d-10  2.0d0
+'ch4(aq)'  1.0d-10  2.0d0
+
+!
+! SOM-degradation - anaerobic respiration
+!
+'SOM-deg'
+5  'SOM' -0.500  'o2(aq)' -1.000  'co3-2' 0.500  'h+1' 1.250  'nh4+1' 0.500
+'irreversible'
+
+'hyperbolic T^a'  4
+'SOM'     2.0d-4   1.0d0
+'o2(aq)'  2.41d-5  1.0d0
+'SOM'     1.0d-10  2.0d0
+'o2(aq)'  1.0d-10  2.0d0
+
+!
+! bio_nit-decay
+!
+'bio_nit_dec'
+2  'bio_nit' -1.000  'bio_nit(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit'   1.0d0
+
+!
+! bio_nit-decay2
+!
+'bio_nit_dec2'
+2  'bio_nit2' -1.000  'bio_nit2(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit2'   1.0d0
+
+!
+! bio_nar-decay
+!
+'bio_nar_dec'
+2  'bio_nar' -1.000  'bio_nar(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nar'   1.0d0
+
+!
+! bio_nir-decay
+!
+'bio_nir_dec'
+2  'bio_nir' -1.000  'bio_nir(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nir'   1.0d0
+
+!
+! bio_aer-decay
+!
+'bio_aer_dec'
+2  'bio_aer' -1.000  'bio_aer(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_aer'   1.0d0
+
+!
+! bio_anaer-decay
+!
+'bio_anaer_dec'
+2  'bio_anaer' -1.000  'bio_anaer(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_anaer'   1.0d0
+
+
+!
+! -------------------------------------------------------------------------------
+! -------------------------------------------------------------------------------
+! simplified C-N cycle and GHG emissions, developed by Mengqi Jia, June, 2020
+!
+
+!
+! anaerobic respiration - CH4 production - Monod-kinetics - biomass dynamics
+!
+'ch3coo-ch4-anaer-t'
+7  'ch3coo-' -1.000  'h2o' -0.824  'nh4+1' -0.032  'bio_anaer' 0.032  'co3-2' 0.920  'ch4(aq)' 0.920  'h+1' 0.872
+'irreversible'
+
+'fractional T^a'  1
+'bio_anaer'   1.0d0
+
+'hyperbolic T^a'  4
+'ch3coo-'   2.00d-4  1.0d0
+'nh4+1'     1.00d-6  1.0d0
+'ch3coo-'   1.0d-10  2.0d0
+'nh4+1'     1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'bio_anaer'  2.00d-5  1.0d0
+'o2(aq)'     6.25d-6  1.0d0
+
+
+!
+! ch4-oxidation - aerobic respiration - Monod-kinetics
+!
+'ch4-o2-t'
+5  'ch4(aq)' -1.000  'o2(aq)' -2.000  'co3-2' 1.000  'h+1' 2.000  'h2o' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-6 1.0d0
+'ch4(aq)'  1.0d-5   1.0d0
+'o2(aq)'   1.0d-10  2.0d0
+'ch4(aq)'  1.0d-10  2.0d0
+
+!
+! bio_anaer-decay
+!
+'anaer_dec-t'
+2  'bio_anaer' -1.000  'bio_anaer(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_anaer'   1.0d0
+
+!
+! Aerobic Respiration
+! ch3coo-degradation - aerobic respiration - Monod-kinetics
+!
+'ch3coo-o2-aer-t'
+7  'ch3coo-' -0.500  'o2(aq)' -0.400  'nh4+1' -0.120  'co3-2' 0.400  'h+1' 0.430  'h2o' 0.360  'bio_aer' 0.120
+'irreversible'
+
+'fractional T^a'  1
+'bio_aer'   1.0d0
+
+'hyperbolic T^a'  6
+'o2(aq)'   3.125d-6  1.0d0
+'ch3coo-'  1.00d-4   1.0d0
+'nh4+1'    1.00d-6   1.0d0
+'o2(aq)'   1.d-10    2.0d0
+'ch3coo-'  1.d-10    2.0d0
+'nh4+1'    1.d-10    2.0d0
+
+'inhibition T^a'  1
+'bio_aer'   2.00d-3   1.0d0
+
+!
+! bio_aer-decay
+!
+'aer_dec-t'
+2  'bio_aer' -1.000  'bio_aer(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_aer'   1.0d0
+
+!
+! SOM-degradation - anaerobic respiration
+!
+'SOM-deg'
+5  'SOM' -1.000  'o2(aq)' -1.000  'co3-2' 3.000  'h+1' 6.000  'nh4+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'SOM'     2.0d-5   1.0d0
+'o2(aq)'  3.125d-6  1.0d0
+'SOM'     1.0d-10  2.0d0
+'o2(aq)'  1.0d-10  2.0d0
+
+!
+! Nitrification (fs =0.1)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+'t-nh4-no3-nit'
+7  'nh4+1' -0.520  'o2(aq)' -0.900  'co3-2' -0.100  'bio_nit' 0.020  'no3-1' 0.500  'h+1' 0.820  'h2o' 0.560
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit'   1.0d0
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-6  1.0d0
+'o2(aq)'  3.125d-6 1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+'inhibition T^a'  1
+'bio_nit'  4.01d-5   1.0d0
+
+!
+! bio_nit-decay
+!
+'nit_dec-t'
+2  'bio_nit' -1.000  'bio_nit(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nit'   1.0d0
+
+
+!
+! Denitrification(I)
+! no3-reduction - denitrification - Monod-kinetics (step 1)
+!
+'t-no3-no2-nar'
+7  'ch3coo-' -0.125  'no3-1' -0.300  'nh4+1' -0.020  'co3-2' 0.150  'no2-1'  0.300  'h+1' 0.195  'bio_nar' 0.020
+'irreversible'
+
+'fractional T^a'  1
+'bio_nar'   1.0d0
+
+'hyperbolic T^a'  6
+'ch3coo-' 2.00d-4   1.0d0
+'no3-1'   1.06d-5   1.0d0
+'nh4+1'   1.00d-6   1.0d0
+'ch3coo-' 1.00d-10  2.0d0
+'no3-1'   1.00d-10  2.0d0
+'nh4+1'   1.00d-10  2.0d0
+
+'inhibition T^a'  2
+'bio_nar'  4.01d-5   1.0d0
+'o2(aq)'   6.25d-6   1.0d0
+
+!
+! bio_nar-decay
+!
+'nar_dec-t'
+2  'bio_nar' -1.000  'bio_nar(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nar'   1.0d0
+
+
+!
+! Denitrification(II)
+! no2-reduction - denitrification - Monod-kinetics (step 2)
+!
+'t-no2-n2o-nir'
+8  'ch3coo-' -0.250  'no2-1' -0.600  'nh4+1' -0.040  'h+1' -0.210  'co3-2' 0.300  'n2o(aq)' 0.300  'h2o' 0.420  'bio_nir' 0.040
+'irreversible'
+
+'fractional T^a'  1
+'bio_nir'   1.0d0
+
+'hyperbolic T^a'  6
+'ch3coo-' 2.00d-4   1.0d0
+'no2-1'   1.06d-5   1.0d0
+'nh4+1'   1.00d-6   1.0d0
+'ch3coo-' 1.00d-10   2.0d0
+'no2-1'   1.00d-10   2.0d0
+'nh4+1'   1.00d-10   2.0d0
+
+'inhibition T^a'  2
+'bio_nir'  4.01d-5   1.0d0
+'o2(aq)'   6.25d-6   1.0d0
+
+!
+! bio_nir-decay
+!
+'nir_dec-t'
+2  'bio_nir' -1.000  'bio_nir(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_nir'   1.0d0
+
+!
+! Denitrification(III)
+! n2o-reduction - denitrification - Monod-kinetics (step 3)
+!
+'t-n2o-n2-n2or'
+8  'ch3coo-' -0.125  'n2o(aq)' -0.300  'nh4+1' -0.020  'h+1' 0.195  'co3-2' 0.150  'n2(aq)' 0.300  'h2o' 0.060  'bio_n2or' 0.020
+'irreversible'
+
+'fractional T^a'  1
+'bio_n2or'   1.0d0
+
+'hyperbolic T^a'  6
+'ch3coo-'  2.00d-4   1.0d0
+'n2o(aq)'  1.06d-5   1.0d0
+'nh4+1'    1.00d-6   1.0d0
+'ch3coo-'  1.00d-10   2.0d0
+'n2o(aq)'  1.00d-10   2.0d0
+'nh4+1'    1.00d-10   2.0d0
+
+'inhibition T^a'  2
+'bio_n2or'   4.01d-5   1.0d0
+'o2(aq)'     6.25d-6   1.0d0
+
+!
+! bio_n2or-decay
+!
+'n2or_dec-t'
+2  'bio_n2or' -1.000  'bio_n2or(d)' 1.000
+'irreversible'
+
+'fractional T^a'  1
+'bio_n2or'   1.0d0
+
+!
+! -------------------------------------------------------------------------------
+! -------------------------------------------------------------------------------
+! N cycle and GHG emissions without biomass dynamics, developed by Mengqi Jia, June, 2020
+! N cycle and GHG emissions without biomass dynamics, revised stoichiometry by Mengqi Jia, July, 2020
+!
+!
+! Nitrification
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+'tt-nh4-no3'
+5  'nh4+1' -0.130  'o2(aq)' -0.260  'no3-1' 0.130  'h+1' 0.260  'h2o' 0.130
+'irreversible'
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-6  1.0d0
+'o2(aq)'  3.125d-6 1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+! Nitrification (combined)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+'ct-nh4-no3'
+5  'nh4+1' -1.000  'o2(aq)' -2.000  'no3-1' 1.000  'h+1' 2.000  'h2o' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-6  1.0d0
+'o2(aq)'  3.125d-6 1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+
+! Nitrification (I)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+
+'t-nh4-no2'
+5  'nh4+1' -1.000  'o2(aq)' -1.500  'no2-1' 1.000  'h+1' 2.000  'h2o' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'nh4+1'   1.00d-4  1.0d0
+'o2(aq)'  3.125d-4 1.0d0
+'nh4+1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+'activation energy' 20.79
+
+
+! Nitrification (II)
+! nh4-oxidation - nitrification - Monod-kinetics
+!
+'t-no2-no3'
+3  'no2-1' -1.000  'o2(aq)' -0.500  'no3-1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'no2-1'   1.00d-4  1.0d0
+'o2(aq)'  3.125d-4 1.0d0
+'no2-1'   1.d-20   2.0d0
+'o2(aq)'  1.d-20   2.0d0
+
+'activation energy' 27.96
+
+!
+! Denitrification(I)
+! no3-reduction - denitrification - Monod-kinetics (step 1)
+!
+'no3-no2-n2o'
+7  'ch3coo-' -0.375  'no3-1' -0.500  'no2-1' -0.500  'n2o(aq)' 0.500  'co3-2' 0.750  'h+1' 0.125  'h2o' 0.500
+'irreversible'
+
+'hyperbolic T^a'  6
+'ch3coo-' 2.00d-4   1.0d0
+'no3-1'   1.06d-5   1.0d0
+'no2-1'   1.06d-5   1.0d0
+'ch3coo-' 1.00d-10  2.0d0
+'no3-1'   1.00d-10  2.0d0
+'no2-1'   1.00d-10   2.0d0
+
+'inhibition T^a'  1
+'o2(aq)'   6.25d-6   1.0d0
+
+
+!
+! Denitrification(I)
+! no3-reduction - denitrification - Monod-kinetics (step 1)
+!
+'t-no3-no2'
+5  'ch3coo-' -0.500  'no3-1' -2.000  'no2-1'  2.000  'co3-2' 1.000  'h+1' 1.500
+'irreversible'
+
+'hyperbolic T^a'  4
+'ch3coo-' 2.00d-4   1.0d0
+'no3-1'   1.06d-5   1.0d0
+'ch3coo-' 1.00d-10  2.0d0
+'no3-1'   1.00d-10  2.0d0
+
+'inhibition T^a'  1
+'o2(aq)'   2.00d-7   1.0d0
+
+'activation energy' 48.28
+
+!
+! Denitrification(II)
+! no2-reduction - denitrification - Monod-kinetics (step 2)
+!
+'t-no2-n2o'
+6  'ch3coo-' -1.000  'no2-1' -4.000  'h+1' -1.000  'co3-2' 2.000  'n2o(aq)' 2.000  'h2o' 2.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'ch3coo-' 2.00d-4   1.0d0
+'no2-1'   1.06d-5   1.0d0
+'ch3coo-' 1.00d-10   2.0d0
+'no2-1'   1.00d-10   2.0d0
+
+'inhibition T^a'  2
+'o2(aq)'   2.00d-7   1.0d0
+'no3-1'    5.00d-4   1.0d0
+
+'activation energy' 48.28
+
+!
+! Denitrification(III)
+! n2o-reduction - denitrification - Monod-kinetics (step 3)
+!
+'t-n2o-n2'
+5  'ch3coo-' -0.500  'n2o(aq)' -2.000  'h+1' 1.500  'co3-2' 1.000  'n2(aq)' 2.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'ch3coo-'  2.00d-4   1.0d0
+'n2o(aq)'  1.06d-5   1.0d0
+'ch3coo-'  1.00d-10   2.0d0
+'n2o(aq)'  1.00d-10   2.0d0
+
+'inhibition T^a'  2
+'o2(aq)'   2.00d-7   1.0d0
+'no3-1'    5.00d-4   1.0d0
+
+'activation energy' 48.28
+
+!
+! chemodenitrification
+!
+'t-no2-n2o'
+5  'no2-1' -1.0  'h+1' -0.500  'no3-1' 0.500  'n2o(aq)' 0.250  'h2o' 0.250
+'irreversible'
+
+'hyperbolic T^a'  2
+'no2-1'   1.06d-5   1.0d0
+'no2-1'   1.00d-10   2.0d0
+
+!
+! -------------------------------------------------------------------------------
+! -------------------------------------------------------------------------------
+! C cycle and GHG emissions without biomass dynamics, developed by Mengqi Jia, June, 2020
+! C cycle and GHG emissions without biomass dynamics, revised by Mengqi Jia, July, 2020
+
+!
+! Aerobic Respiration
+! ch3coo-degradation - aerobic respiration - Monod-kinetics
+!
+'t-ch3coo-o2'
+4  'ch3coo-' -0.500  'o2(aq)' -1.000  'co3-2' 1.000  'h+1' 1.500
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-4  1.0d0
+'ch3coo-'  2.00d-4   1.0d0
+'o2(aq)'   1.d-10    2.0d0
+'ch3coo-'  1.d-10    2.0d0
+
+'activation energy' 16.73
+
+!
+! anaerobic respiration - CH4 production - Monod-kinetics - biomass dynamics
+!
+'t-ch3coo-ch4'
+5  'ch3coo-' -1.000  'h2o' -1.000  'ch4(aq)' 1.000  'co3-2' 1.000  'h+1' 1.000
+'irreversible'
+
+'hyperbolic T^a'  2
+'ch3coo-'   2.00d-4  1.0d0
+'ch3coo-'   1.0d-10  2.0d0
+
+'inhibition T^a'  2
+'o2(aq)'    1.00d-6   1.0d0
+'no3-1'     1.00d-5   1.0d0
+
+'activation energy' 11.95
+
+!
+! ch4-oxidation - aerobic respiration - Monod-kinetics
+!
+'t-ch4-o2'
+5  'ch4(aq)' -1.000  'o2(aq)' -2.000  'co3-2' 1.000  'h+1' 2.000  'h2o' 1.000
+'irreversible'
+
+'hyperbolic T^a'  4
+'o2(aq)'   3.125d-6 1.0d0
+'ch4(aq)'  1.0d-5   1.0d0
+'o2(aq)'   1.0d-10  2.0d0
+'ch4(aq)'  1.0d-10  2.0d0
+
+'activation energy' 11.95
+
+
+!
+! SOM-degradation reaction
+!
+'t-SOM-o2-bulk'
+6  'SOM' -1.000  'o2(aq)' -2.500  'h2o' -4.000  'ch3coo-' 4.500  'co3-2' 1.000  'h+1' 6.500
+'irreversible-bulk'
+
+'hyperbolic T^a'  4
+'SOM'     2.00d-4   1.0d0
+'o2(aq)'  3.125d-4  1.0d0
+'SOM'     1.0d-10   2.0d0
+'o2(aq)'  1.0d-10   2.0d0
+
+'activation energy' 16.73
+
+!
+! SOM-degradation reaction2
+!
+'t-SOM-o2-bulk2'
+5  'SOM' -1.000  'o2(aq)' -1.000  'ch3coo-' 1.000  'co3-2' 1.000  'h+1' 2.000
+'irreversible-bulk'
+
+'hyperbolic T^a'  4
+'SOM'     2.00d-4   1.0d0
+'o2(aq)'  3.125d-4  1.0d0
+'SOM'     1.0d-10   2.0d0
+'o2(aq)'  1.0d-10   2.0d0
+
+'activation energy' 16.73
+
+
+!end of database
+'end'

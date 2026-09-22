@@ -1,0 +1,66 @@
+#Program     : MIN3P_THCm.
+#Version     : 1.0.599.0
+#Commit date : 2018/08/08 09:47:15
+#Build date  : 2025/07/03 14:18:24
+#Repository  : https://min3psvn.ubc.ca/svn/min3p_thcm/branches/dsu_dual_permeability
+#Platform    : Release_X64
+#System      : Linux
+#Solver      : WS209
+#Parallel    : Sequential
+************************************************************************
+log file for dataset speciation
+************************************************************************
+
+consider exponent n for reaction rate law: false
+initial condition - local geochemistry
+------------------------------------------------------------------------
+
+************************************************************************
+initial concentrations                                                  
+************************************************************************
+
+ reading aqueous concentrations
+ reading mineral parameters
+ quartz
+ k-feld-d-ph
+ na-montmor
+ calcite-ph
+ Newton Iteration Convergence Summary: lc
+ Newton     maximum    for         
+ iteration  update     component   
+     1      1.1805D+00 mg+2        
+     2      1.1805D+00 mg+2        
+     3     -4.3429D-01 al+3        
+     4     -4.3429D-01 al+3        
+     5     -4.3429D-01 al+3        
+     6     -4.3428D-01 al+3        
+     7     -4.3425D-01 al+3        
+     8     -4.3417D-01 al+3        
+     9     -4.3396D-01 al+3        
+    10     -4.3338D-01 al+3        
+    11     -4.3182D-01 al+3        
+    12     -4.2759D-01 al+3        
+    13     -4.1629D-01 al+3        
+    14     -3.8694D-01 al+3        
+    15     -3.1721D-01 al+3        
+    16     -1.8382D-01 al+3        
+    17     -4.9983D-02 al+3        
+    18     -3.2956D-03 al+3        
+    19      5.7016D-04 cl-1        
+    20     -9.5357D-05 cl-1        
+    21      3.5286D-05 cl-1        
+    22      1.0546D-05 cl-1        
+    23     -2.0205D-06 cl-1        
+    24      3.7663D-07 cl-1        
+
+general run specific statistics ...
+------------------------------------------------------------------------
+
+total number of Newton iterations       =         24
+total number of time steps              =          0
+
+------------------------------------------------------------------------
+
+         ***************** normal exit *************b****
+
+

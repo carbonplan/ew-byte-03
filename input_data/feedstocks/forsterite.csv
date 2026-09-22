@@ -1,0 +1,6 @@
+# Single-mineral forsterite feedstock.
+# `mineral` must match a mineral name in the MIN3P mineral database (mineral.dbs)
+# AND be declared in the 'minerals' block of the simulation's .dat deck.
+# `weight_percent` is renormalised to sum to 100 on load.
+mineral,weight_percent
+forst-ph,100.0

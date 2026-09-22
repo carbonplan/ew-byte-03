@@ -1,0 +1,10 @@
+# Illustrative 4-mineral basalt, using MIN3P mineral.dbs names.
+# NOTE: this is a demonstration of the multi-mineral machinery only -- these
+# minerals are NOT currently declared in the met_forcing_rxn decks, so this
+# feedstock cannot be applied to those runs without editing the geochemical
+# system block first.
+mineral,weight_percent
+anorthite-ph,40.0
+augite-ph,35.0
+forst-ph,15.0
+albite-ph,10.0

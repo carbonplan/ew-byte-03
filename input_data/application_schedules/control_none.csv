@@ -1,0 +1,3 @@
+# Control: no feedstock is ever applied. Header only, no rows.
+# Used instead of a null `schedule` cell so the batch CSV column is never empty.
+year,rate_t_ha

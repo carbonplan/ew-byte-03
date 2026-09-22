@@ -1,0 +1,17 @@
+[project]
+name = "byte_util"
+version = "0.1.0"
+description = "Miscellaneous utilities for processing and analyzing data for MIN3P modeling bytes."
+requires-python = ">=3.13"
+dependencies = [
+    "min3p",
+    "numpy>=2.4.0",
+    "pandas>=3.0.0",
+]
+
+[tool.uv.sources]
+min3p = { path = "../../python-min3p", editable = true }
+
+[build-system]
+requires = ["uv_build>=0.11.28,<0.12"]
+build-backend = "uv_build"

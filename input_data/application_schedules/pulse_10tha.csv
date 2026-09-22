@@ -1,0 +1,7 @@
+# Single 10 t/ha application in year 1.
+# Only years with an application are listed -- an absent year means no rock goes on.
+# `rate_t_ha` is the application rate for that year.
+# A `feedstock` column may be added later to switch feedstock mid-run; when absent,
+# the run-level feedstock applies to every application.
+year,rate_t_ha
+1,10.0

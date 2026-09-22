@@ -1,0 +1,51 @@
+#Program     : MIN3P_THCm.
+#Version     : 1.0.599.0
+#Commit date : 2018/08/08 09:47:15
+#Build date  : 2025/07/03 14:18:24
+#Repository  : https://min3psvn.ubc.ca/svn/min3p_thcm/branches/dsu_dual_permeability
+#Platform    : Release_X64
+#System      : Linux
+#Solver      : WS209
+#Parallel    : Sequential
+************************************************************************
+log file for dataset speciation
+************************************************************************
+
+consider exponent n for reaction rate law: false
+initial condition - local geochemistry
+------------------------------------------------------------------------
+
+************************************************************************
+initial concentrations                                                  
+************************************************************************
+
+ reading aqueous concentrations
+ reading mineral parameters
+ quartz
+ k-feld-d-ph
+ na-montmor
+ calcite-ph
+ Newton Iteration Convergence Summary: lc
+ Newton     maximum    for         
+ iteration  update     component   
+     1      1.1805D+00 mg+2        
+     2      1.1805D+00 mg+2        
+     3      3.1787D-01 cl-1        
+     4      2.9021D-01 cl-1        
+     5     -6.0030D-02 cl-1        
+     6     -8.4986D-03 al+3        
+     7     -5.5941D-04 al+3        
+     8      4.6626D-06 cl-1        
+     9      4.3227D-07 al+3        
+
+general run specific statistics ...
+------------------------------------------------------------------------
+
+total number of Newton iterations       =          9
+total number of time steps              =          0
+
+------------------------------------------------------------------------
+
+         ***************** normal exit *************b****
+
+

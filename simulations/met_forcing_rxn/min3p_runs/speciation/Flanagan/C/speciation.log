@@ -1,0 +1,70 @@
+#Program     : MIN3P_THCm.
+#Version     : 1.0.599.0
+#Commit date : 2018/08/08 09:47:15
+#Build date  : 2025/07/03 14:18:24
+#Repository  : https://min3psvn.ubc.ca/svn/min3p_thcm/branches/dsu_dual_permeability
+#Platform    : Release_X64
+#System      : Linux
+#Solver      : WS209
+#Parallel    : Sequential
+************************************************************************
+log file for dataset speciation
+************************************************************************
+
+consider exponent n for reaction rate law: false
+initial condition - local geochemistry
+------------------------------------------------------------------------
+
+************************************************************************
+initial concentrations                                                  
+************************************************************************
+
+ reading aqueous concentrations
+ reading mineral parameters
+ quartz
+ k-feld-d-ph
+ na-montmor
+ calcite-ph
+ Newton Iteration Convergence Summary: lc
+ Newton     maximum    for         
+ iteration  update     component   
+     1      1.1805D+00 mg+2        
+     2      1.1805D+00 mg+2        
+     3     -4.3429D-01 al+3        
+     4     -4.3429D-01 al+3        
+     5     -4.3429D-01 al+3        
+     6     -4.3429D-01 al+3        
+     7     -4.3428D-01 al+3        
+     8     -4.3427D-01 al+3        
+     9     -4.3422D-01 al+3        
+    10     -4.3409D-01 al+3        
+    11     -4.3375D-01 al+3        
+    12     -4.3282D-01 al+3        
+    13     -4.3031D-01 al+3        
+    14     -4.2356D-01 al+3        
+    15     -4.0580D-01 al+3        
+    16     -3.6160D-01 al+3        
+    17      3.1464D-01 cl-1        
+    18      2.9155D-01 cl-1        
+    19      3.0760D-01 cl-1        
+    20      1.9386D-01 cl-1        
+    21     -3.2996D-02 cl-1        
+    22     -2.5756D-03 al+3        
+    23      1.9169D-03 cl-1        
+    24     -3.1815D-04 cl-1        
+    25     -3.2311D-05 cl-1        
+    26      2.0703D-05 cl-1        
+    27     -2.6033D-06 cl-1        
+    28     -5.0195D-07 cl-1        
+
+general run specific statistics ...
+------------------------------------------------------------------------
+
+total number of Newton iterations       =         28
+total number of time steps              =          0
+
+------------------------------------------------------------------------
+
+         ***************** normal exit *************b****
+
+

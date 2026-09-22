@@ -1,0 +1,13 @@
+# 1 t/ha every year for 10 years.
+# Only years with an application are listed -- an absent year means no rock goes on.
+year,rate_t_ha
+1,1.0
+2,1.0
+3,1.0
+4,1.0
+5,1.0
+6,1.0
+7,1.0
+8,1.0
+9,1.0
+10,1.0

@@ -1,0 +1,40 @@
+[project]
+name = "min3p-model-bytes"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "byte-util",
+    "cartopy>=0.25.0",
+    "cdsapi>=0.7.7",
+    "coiled>=1.135.0",
+    "fastparquet>=2026.5.0",
+    "h5netcdf>=1.8.1",
+    "h5py>=3.16.0",
+    "matplotlib>=3.11.0",
+    "min3p",
+    "nbstripout>=0.9.1",
+    "notebook>=7.5.7",
+    "pandas>=3.0.3",
+    "pydgsa>=1.0.3",
+    "pyfao56>=1.4.3",
+    "rioxarray>=0.22.0",
+    "rosetta-soil>=0.3.2",
+    "s3fs>=2026.4.0",
+    "scipy>=1.18.0",
+    "soildb>=0.8.0",
+    "xarray>=2026.4.0",
+    "zarr>=3.2.1",
+]
+
+[dependency-groups]
+test = ["pytest>=9.0.0"]
+
+[tool.uv.sources]
+min3p = { path = "../python-min3p", editable = true }
+byte-util = { workspace = true, editable = true }
+
+[tool.uv.workspace]
+members = [
+    "byte_util",
+]
