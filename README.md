@@ -7,33 +7,43 @@
 </a>
 </p>
 
-# python-project-template
+# Byte-03: Time resolution of meteorological forcings
 
-A CarbonPlan template for a developing a Python project
-
-[![CI](https://github.com/carbonplan/python-project-template/actions/workflows/main.yaml/badge.svg)](https://github.com/carbonplan/python-project-template/actions/workflows/main.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This CarbonPlan repository contains a template for developing a python project. To start, click on the green [Use this template](https://github.com/carbonplan/python-project-template/generate) button in the top right. This will allow you to create a new project using this base template.
+This repository includes the scripts for initializing and processing MIN3P simulations designed to analyze how the time resolution of meteorological forcing affects enhanced weathering carbon dioxide removal estimates. Simulations were conducted with a branched version of MIN3P found [here](TKTK). 
 
-## Modifications
 
-### Updating project name
+## Contents
 
-`scripts` and `tests` contain filler .py files. Update/remove these with your project name.
+```
+├── byte_util/            
+    └── src/byte_util/        # helper functions
+├── figures/                  # scripts to process + plot data
+    └── postprocess-data/     #
+├── input_data/               # data + notebooks for run setup
+└── simulations/              # initialize runs and plot output
+```
 
-### Updating workflows/main.yaml
+## Quick start
 
-In the workflows/main.yaml file, the pytest and docker sections of the github actions configuration are currently commented out. If you wish to add them, uncomment them.
+Install [uv](https://docs.astral.sh/uv/):
 
-### Updating requirements.txt
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-requirements.txt is currently empty. You can populate it with: `pip3 freeze > requirements.txt`
+Run notebooks:
+```bash
+uv sync
+uv notebook
+```
+**OR**
 
-## license
+Install the dependencies with your package manager of choice (pip, conda, etc.)
 
-All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/)-licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, articles, etc.).
+## License
+This work is licensed under the MIT license. 
 
-## about us
-
-CarbonPlan is a nonprofit organization that uses data and science for climate action. We aim to improve the transparency and scientific integrity of climate solutions with open data and tools. Find out more at [carbonplan.org](https://carbonplan.org/) or get in touch by [opening an issue](https://github.com/carbonplan/python-project-template/issues/new) or [sending us an email](mailto:hello@carbonplan.org).
+## About us
+CarbonPlan is a nonprofit organization that uses data and science for climate action. We aim to improve the transparency and scientific integrity of climate solutions with open data and tools. Find out more at [carbonplan.org](https://carbonplan.org/).
