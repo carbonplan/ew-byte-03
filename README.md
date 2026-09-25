@@ -11,7 +11,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This repository includes the scripts for initializing and processing MIN3P simulations designed to analyze how the time resolution of meteorological forcing affects enhanced weathering carbon dioxide removal estimates. Simulations were conducted with a branched version of MIN3P found [here](TKTK). 
+This repository includes the scripts for initializing and processing MIN3P simulations designed to analyze how the time resolution of meteorological forcing affects enhanced weathering carbon dioxide removal estimates. Simulations were conducted with a branched version of MIN3P found [here](https://github.com/kumayer/min3p-dp-perzan). 
 
 
 ## Contents
